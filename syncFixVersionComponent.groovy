@@ -16,7 +16,6 @@ def issueManager = ComponentAccessor.getIssueManager()
 def commentManager = ComponentAccessor.getCommentManager()
 def user = userManager.getUserByName("automation")
 
-//Issue issue = issueManager.getIssueObject("AN-2126")
 //JQL Query 
 def query = jqlQueryParser.parseQuery("issuetype in ('SAMPLE') AND project = 'SAMPLE'") 
 def results = searchProvider.search(query, user, PagerFilter.getUnlimitedFilter())
